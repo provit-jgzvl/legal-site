@@ -97,7 +97,7 @@
 <h1>Privacy Policy</h1>
 <p><strong>Provit</strong><br>Bundle ID: <code>com.provit.jgzvl</code><br>Last updated: September 18, 2026</p>
 <p>Contact: <a href="mailto:provit.creator.care@gmail.com">provit.creator.care@gmail.com</a></p>
-<p>This Privacy Policy explains what Provit stores on your device, what leaves the device, and how permissions are used. Provit is a <strong>local</strong> beauty-clip studio: there is no Provit account server and no Provit analytics backend.</p>
+<p>This Privacy Policy explains what Provit stores on your device, what leaves the device, and how permissions are used. Provit is a <strong>local</strong> beauty short-video studio: there is no Provit account server and no Provit analytics backend. The App is intended for users <strong>13 years of age and older</strong>.</p>
 <hr>
 <h2>1. Who we are</h2>
 <p>Provit (“the App”) is an iOS application identified by Bundle ID <code>com.provit.jgzvl</code>. For privacy questions or safety reports, contact <strong><a href="mailto:provit.creator.care@gmail.com">provit.creator.care@gmail.com</a></strong>.</p>
@@ -106,9 +106,11 @@
 <ul>
 <li>Local Quick Login credentials (Keychain) and session flags</li>
 <li>Setup preferences (content type, record quality, onboarding completion)</li>
-<li>Beauty projects, working video files, and a local result index</li>
-<li>Demo feed state: reactions, hidden rows, blocks, boost state, report tickets</li>
-<li>Coin balance, credited StoreKit transaction IDs, and purchase records</li>
+<li>Beauty projects, working video files (including seed clips copied into the private directory), and a local result index</li>
+<li>Studio feed state: reactions, hidden rows, blocks, follows, boost state, report tickets</li>
+<li>Local chat threads with seed publishers and your messages</li>
+<li>Posts (tool-guide) like state</li>
+<li>Coin balance, a one-time welcome-grant flag, credited StoreKit transaction IDs, and purchase records</li>
 <li>Look Mood Journal, Beauty Prep Checklist, and Look Goals entries</li>
 <li>A one-time flag that the App Tracking / notification permission chain has been prompted</li>
 </ul>
@@ -116,8 +118,8 @@
 <h2>3. What leaves the device</h2>
 <ul>
 <li><strong>Apple In-App Purchase</strong> — purchases are processed by Apple. Apple may process purchase-related identifiers under Apple’s policies. Provit does not receive your payment card number.</li>
-<li><strong>Email you choose to send</strong> — when you Report a clip or use Profile → Safety, the App opens your mail client with a draft that may include a local ticket ID and a short content snippet. You control whether to send that email.</li>
-<li><strong>No Provit server upload</strong> — the App does not upload clips, titles, or tools data to a Provit backend. There is no Provit-operated social network.</li>
+<li><strong>Email you choose to send</strong> — when you Report a clip or creator from Studio More, or use Me → Safety, the App opens your mail client with a draft that may include a local ticket ID and a short content snippet. You control whether to send that email.</li>
+<li><strong>No Provit server upload</strong> — the App does not upload clips, titles, chats, boosts, or tools data to a Provit backend. A Boost only changes local Studio sort order. There is no Provit-operated social network.</li>
 </ul>
 <h2>4. Facial data</h2>
 <p>This chapter explains collection, use, disclosure, sharing, and retention of information that may relate to a face, so it can be cited under App Store Guideline 2.1 / 5.1.1.</p>
@@ -127,7 +129,7 @@
 <p>Facial imagery in your clips is used only to:</p>
 <ul>
 <li>Let you record, preview, save, play back, and export your own beauty clips on this device</li>
-<li>Show covers and playback in your local Demo Studio feed and project lists</li>
+<li>Show covers and playback in your local Studio feed and project lists</li>
 </ul>
 <p>It is <strong>not</strong> used for authentication, advertising profiling, or third-party identity verification.</p>
 <h3>4.3 Sharing and disclosure</h3>
@@ -135,13 +137,13 @@
 <h3>4.4 Where it is stored and retention</h3>
 <ul>
 <li>Stored in the App private directory on your device</li>
-<li>Retained until you delete the project, clear all local data, delete your account, or uninstall the App</li>
+<li>Retained until you delete the project, delete your account, or uninstall the App</li>
 <li>Deleting a project removes its referenced media files when nothing else references them</li>
 </ul>
 <h3>4.5 Scope of this chapter</h3>
 <p><strong>This Section 4</strong> is the complete explanation of Provit’s collection, use, disclosure, sharing, and retention practices for facial imagery in user media.</p>
 <h2>5. Third-party AI</h2>
-<p>Provit does <strong>not</strong> send user prompts, titles, photos, videos, or other content to any third-party generative or analytical AI service. Beauty tools and the Demo feed run on-device with local data and scripted demos only.</p>
+<p>Provit does <strong>not</strong> send user prompts, titles, photos, videos, or other content to any third-party generative or analytical AI service. Beauty tools, Studio feed, Posts, chat, and Boost run on-device with local data and scripted seed content only.</p>
 <h2>6. Permissions</h2>
 <table>
 <thead>
@@ -173,7 +175,7 @@
 </tr>
 <tr>
 <td>App Tracking Transparency</td>
-<td>Measure demo feature engagement and improve local recommendations</td>
+<td>Measure feature engagement for App Store advertising attribution where applicable</td>
 <td>First time you open Studio</td>
 </tr>
 <tr>
@@ -186,27 +188,29 @@
 <h2>7. Tracking and notifications</h2>
 <ul>
 <li>On the <strong>first</strong> Studio (Home) visit after login, Provit may show the system App Tracking Transparency dialog, then the system notification permission dialog.</li>
-<li>Declining tracking does not block core clip creation features.</li>
+<li>Declining tracking does not block core clip creation, Studio swipe, Boost, chat, or Posts.</li>
 <li>After the notification permission request, Provit does <strong>not</strong> set a notification delegate, schedule local notifications, or handle remote notification payloads.</li>
 </ul>
 <h2>8. In-App Purchases</h2>
 <p>Coins are sold as consumable In-App Purchases through Apple. Purchase receipts are verified with StoreKit. Local records keep transaction identifiers so the same purchase is not credited twice. Apple processes payment; Provit does not store card data.</p>
+<p>The first Quick Login also grants a one-time welcome balance equal to twice the $0.99 pack. That grant is stored only on this device and is not an Apple purchase.</p>
 <h2>9. User-generated content controls (on device)</h2>
-<p>If you use Report, Hide, or Block:</p>
+<p>If you use Report, Hide, Block, Follow, or Boost:</p>
 <ul>
-<li>The App updates <strong>local</strong> feed visibility and moderation tickets immediately</li>
+<li>The App updates <strong>local</strong> feed visibility, follow lists, boost sort order, and moderation tickets immediately</li>
 <li>A report opens your email client; content leaves the device only if you send the email</li>
-<li>Filter rules for titles run on-device before publish</li>
+<li>Filter rules for titles and chat run on-device before save</li>
+<li>Boost does not upload the clip or notify other devices</li>
 </ul>
 <h2>10. Children’s privacy</h2>
-<p>The App’s age rating is declared in App Store Connect at submission. Provit does not knowingly collect personal information from children for sale or for a Provit cloud profile. If you believe a child’s information was stored on a device in error, contact us and we will help you clear local data.</p>
+<p>The App is intended for users <strong>13+</strong>. Provit does not knowingly collect personal information from children under 13 for sale or for a Provit cloud profile. If you believe a child’s information was stored on a device in error, contact us and we will help you delete the local account data.</p>
 <h2>11. Deleting your data</h2>
 <ul>
-<li><strong>Delete Account</strong> — wipes credentials, Coins, projects, media, demo history, tools data, and related preferences on this device</li>
-<li><strong>Clear All Local Data</strong> — wipes projects, media, demo history, Coins, and tools data; credentials may be kept so Quick Login still works</li>
+<li><strong>Delete Account</strong> — wipes credentials, Coins, projects, media, Studio history, chats, follows, tools data, the welcome-grant flag, and related preferences on this device</li>
+<li><strong>Logout</strong> — ends the session and keeps credentials so Quick Login can sign you back in; clips and Coins stay on the device</li>
 <li>Uninstalling the App removes the App container according to iOS behaviour</li>
 </ul>
-<p>Coins cannot be restored after deletion.</p>
+<p>There is no separate “Clear All Local Data” Settings row. Coins cannot be restored after deletion.</p>
 <h2>12. Sale of personal data</h2>
 <p>We do not sell your personal data.</p>
 <h2>13. Changes</h2>
